@@ -1,0 +1,486 @@
+/*
+Theme Name: Cran-Berry
+Theme URI: mtekk.weblogs.us/code/berry
+Description: Berry, a clean WordPress theme.
+Author: John Havlik
+Author URI: mtekk.weblogs.us
+Version: .99
+*/
+body
+{
+	margin: 0;
+	background: url(images/headerbg.png) repeat-x top left;
+	text-align: center;
+	font-family: Georgia, Arial, Verdana;
+	color: #333;
+	line-height: normal;
+}
+h1
+{
+	font-size: 2.4em;
+	font-family: Georgia, Arial, Verdana;
+	font-weight: bolder;
+	color: #fff;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+h2
+{
+	font-size: 1.8em;
+	font-family: Georgia, Arial, Verdana;
+	font-weight: normal;
+	color: #333;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+h3{
+	font-size: 1.2em;
+	font-family: Georgia, Arial, Verdana;
+	font-weight: bolder;
+	text-decoration: none;
+	color: #8b2727;
+	padding: 0;
+	margin: 0;
+}
+h4
+{
+	font-size: 1em;
+	font-family: Georgia, Arial, Verdana;
+	font-weight: bolder;
+	text-decoration: none;
+	color: #333;
+	padding: 0;
+	margin: 0;
+}
+p
+{
+	font-size: 1em;
+	font-family: Georgia, Arial, Verdana;
+	font-weight: normal;
+	color: #333;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+small
+{
+	font-size: .7em;
+	font-family: Georgia, Arial, Verdana;
+	font-weight: normal;
+	color: #999;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+hr
+{
+	margin: 0;
+	border: none;
+	border-top: 1px solid #8b2727;
+}
+a
+{
+	color: #8b2727;
+	text-decoration: none;
+	line-height: normal;
+}
+a:hover{text-decoration: underline;}
+ul
+{
+	font-family: Georgia, Arial, Verdana;
+	font-weight: normal;
+	color: #333;
+	text-decoration: none;
+	list-style: disc;
+}
+img{border: none;}
+blockquote
+{
+	margin: 20px 0;
+	padding: 0 20px 0 50px;
+	color: #333;
+	min-height: 55px;
+	background: #fff url('images/quote.png') no-repeat 10px 0;
+	border: none;
+}
+iframe{width: 500px !important; height: 500px !important; display: block !important; background: #ff0000; border: #000 dashed thick !important;}
+.container{width: 950px;margin: 0 auto;text-align: left;}
+.left, .avatar{float: left; position: relative;}
+.right{float: right; position: relative;}
+/*Header Layout - same for all*/
+.header
+{
+	width: 100%;
+	height: 100px;
+	border: none;
+	padding: 0;
+	float: left;
+	position: relative;
+}
+.header img
+{
+	margin: 0;
+	border: none;
+	padding: 0;
+	position: relative;
+	float: left;
+}
+.header a
+{
+	color: #fff;
+	margin: 25px 0 0 20px;	position: relative;
+	float: left;
+}
+.header p
+{
+	font-size: 1.1em;
+	color: #fff;
+	margin: 25px 0 0 10px;
+	position: relative;
+	float: left;
+}
+.searchform
+{
+	margin: 20px 15px 0 5px;
+	float: right;
+	position: relative;
+}
+.searchform input{padding: 2px;}
+/*Navbar*/
+.navbar{
+	width: 100%;
+	height: 30px;
+	position: relative;
+	color: #ccc;
+	float: left;
+}
+.navbar ul
+{
+	margin: 4px 0 0 0;
+	padding: 3px 15px 5px 0;
+	list-style: none;
+	position: relative;	float: right;
+}
+.navbar li
+{
+	float: left;
+    margin: 0;
+    padding: 0 0 0 9px;
+    border: none;
+    font-size: .8em;
+    color: #fff;
+}
+.navbar a{color: #fff;}
+.navbar div
+{	float: left;
+	margin-top: 4px;
+	position: relative;
+	width: auto;	font-size: .8em;	max-width: 70%;	padding: 3px 5px 5px 15px;
+}
+/*Blog Layout*/
+.main
+{
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.articles
+{
+	width: 670px;
+	padding: 10px 10px 10px 15px;
+	margin: 0;
+	float: left;
+	overflow: hidden;
+	line-height: 1.3em;
+	position: relative;
+}
+.post{width:100%;float: left; position: relative;}
+.datebadge
+{   	padding: 0 5px 5px 0;
+	height: 60px;
+	width: 56px;
+	float: left;
+	position: relative;
+	font-size: .9em;	font-weight: bolder;	text-align: center;}.datebadge span
+{
+	display: block;
+	text-align: center;
+	font-size: 1.4em;
+	color: #8b2727;
+}
+.itemhead
+{	float: left;
+	width: 100%;	position: relative;	margin: 0 0 5px 0;
+	padding: 0;
+}
+.itemmteta
+{
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.itemfront
+{
+	float: left;
+	position: relative;
+	width: 91%;
+	margin: 0;
+    padding: 0 0 15px 60px;
+}
+.itembody{margin: 0; padding: 0 0 15px 0;}
+.itembody p,.itemfront p{padding: .3em 0 .3em 0;}
+.itembody > img,.itemfront > img{margin: 5px; padding: 5px; border: solid 1px #999;}
+.commentslink 
+{
+	padding: 2px 0 2px 22px;
+	background: url('images/comments.png') left center no-repeat;
+	margin-left: 5px;
+}
+.feed
+{	padding: 2px 0 2px 22px;	background: url('images/feed.png') left center no-repeat;
+	line-height: 2em;
+	margin-left: 5px;
+}
+.date
+{
+	padding: 2px 0 2px 22px;
+	background: url('images/calendar.png') left center no-repeat;
+	line-height: 2em;
+	margin-left: 5px;
+}
+.time
+{
+	padding: 2px 0 2px 22px;
+	background: url('images/clock.png') left center no-repeat;
+	line-height: 2em;
+	margin: 0 5px 0 5px;
+}
+.postname
+{
+	padding: 2px 0 2px 22px;
+	background: url('images/post.png') left center no-repeat;
+    line-height: 2em;
+	margin-left: 5px;
+}
+.error
+{
+    padding: 2px 0 2px 56px;
+	background: url('images/error.png') left center no-repeat;
+	margin-left: 5px;
+}
+.editlink 
+{
+    padding: 2px 0 2px 21px;
+	background: url('images/edit.png') left center no-repeat;
+	margin-left: 7px;
+}
+.author
+{
+	padding: 2px 0 2px 19px;
+	background: url('images/author.png') left center no-repeat;
+	margin-left: 0px;
+}
+.category
+{
+	padding: 2px 0 2px 21px;	background: url('images/category.png') left center no-repeat;
+	margin-left: 5px;}
+.tag
+{
+	padding: 2px 0 2px 19px;
+	background: url('images/tag-red.png') left center no-repeat;
+	margin-left: 3px;
+}
+.cblock{display: block;}
+.comments
+{
+	padding: 2px 0 2px 21px;
+	background: url('images/comments.png') left center no-repeat;
+	margin-left: 8px;
+}
+.cl-comments
+{
+	padding: 2px 0 2px 21px;
+	background: url('images/cl-comments.png') left center no-repeat;
+	margin-left: -21px;
+}
+.comment-admin
+{
+	padding: 3px 5px;
+	font-size: .7em;
+}
+.avatar
+{
+	margin: 2px 10px 5px 0;
+}
+.commentlist
+{
+	width: 100%;
+}
+.commentlist
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.commentlist ul
+{
+	list-style: none;
+	float: left;	position: relative;
+}
+.pinglist li
+{
+	font-size: .8em;
+	margin: 0;
+	padding: 2px 0;
+}
+.commentlist li
+{
+	margin: 5px 0;
+	padding: 10px;
+	overflow: hidden;
+}
+.commentlist cite
+{
+	font-weight: bolder;
+	font-style: normal;
+	color: #333;}
+.commentlist li p
+{
+	line-height: 1.4;
+	padding: .3em;
+}
+.even{border: solid 1px #ccc;}
+.odd{border: solid 1px #999;}
+.reply{float: right; margin: 10px 0 0;}
+.bypostauthor{border: solid 1px #8b2727;}
+.commentmetadata
+{	width: 100%;
+	margin-bottom: 10px;
+}
+.commentform
+{
+	width: 94%;
+	float: left;
+	padding: 3%;
+	margin: 0;
+}
+.commentform input
+{
+	font-family: Georgia, Arial, Verdana;
+	width: 47%;
+	color: #333;
+	padding: 6px;	border: 1px solid #8b2727;
+	margin: 0 0 15px 0;
+	float: right;
+}
+.commentform label
+{
+	width: 46.5%;
+	font-size: .9em;
+	display: block;
+	text-align: right;
+	margin: 0;
+	padding: 5px 2.5% 3px .5%;
+	float: left;
+}
+.commentform textarea
+{
+	float: right;
+	font-family: Georgia, Arial, Verdana;
+	color: #333;
+	border: 1px solid #8b2727;
+	width: 97%;
+	padding: 5px 6px;
+}
+.commentform p
+{
+	width: 100%;
+	float: right;
+}
+.commentform button
+{	margin: 0;
+	padding: 5px;
+	float: right;
+}
+.sidebar
+{
+	float: right;	margin: 10px 0 0 0;
+	padding: 0 3px 5px 5px;
+	width: 230px;
+	position: relative;	text-align: left;
+}.sidebar ul
+{
+	margin: 0;
+	padding: 3px 2px 5px 20px;
+	list-style-type: none;
+}
+.sidebar > ul
+{
+	padding: 0 0 0 7px;
+	position: relative;
+	text-align: left;
+	font-size: .65em;
+	font-family: Georgia, Arial, Verdana;
+}
+.sidebar > ul > li > ul > li
+{
+	position: relative;
+	text-align: left;
+	font-size: 1.3em;
+}
+.sidebar > ul a:hover {color: #cc3333; text-decoration: none;}
+.sidebar small{font-size: 1em;}
+.metadata span{line-height: 2em;}
+.botnav
+{
+	font-size: .8em;
+	text-align: center;
+}
+.botnav a
+{
+	font-weight: lighter;
+	padding: 1px 6px 1px 6px;
+}
+.botnav span{
+	font-weight: bolder;
+	padding: 1px 6px 1px 6px;
+}
+.botnav a:hover
+{
+	color: #cc3333;
+	font-weight: bolder;
+}
+.meta{padding: 0 0 0 7px;}
+/*Footer Layout*/
+.footer
+{
+	width: 100%;
+	height: 50px;
+	margin: 0;
+	background: #333;
+	position: relative;
+	float: left;
+}
+.footer a
+{
+	font-size: .9em;
+	color: #fff;
+}
+.footer p
+{
+	padding: 8px 10px 10px 10px;
+	font-size: .9em;
+	color: #fff;
+	float: left;
+	position: relative;
+}
+.footer span
+{
+	font-size: .9em;
+	padding: 8px 10px 10px 10px;
+	color: #fff;
+	float: right;
+	position: relative;
+}
