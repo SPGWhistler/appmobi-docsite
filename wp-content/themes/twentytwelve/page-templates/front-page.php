@@ -19,6 +19,8 @@ get_header(); ?>
 		<?php wp_list_pages(array(
 			'depth' => 1,
 		)); ?>
+		<br><br>
+		hi
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
