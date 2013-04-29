@@ -50,8 +50,11 @@ ul#clb {
   Now I style the individual boxes (li)
 */
 ul#clb li {
-  margin : 0 2px;
+  margin : 2px 2px;
   border : 1px solid #666;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
   width : 200px;
   height : auto;
   /*background : #ffffea url(images/clb_li_back.jpg);*/
@@ -85,6 +88,12 @@ ul#clb li {
   /*background : #333 url(images/clb_h3_back.jpg) repeat-x;*/
   background : #333;
   border-bottom : 1px solid #666;
+  -webkit-border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  -moz-border-radius-topright: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
   text-decoration : none;
 }
 #clb-shell ul#clb h3 a:hover, #clb-shell ul#clb h3 a:focus, #clb-shell ul#clb h3 a:active {
