@@ -17,17 +17,15 @@ get_header(); ?>
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 			<?php
-			$my_wp_query = new WP_Query();
-			$all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
-			$page =  get_page_by_title('home');
-			$page_children = get_page_children( $page->ID, $all_wp_pages );
-			foreach ($page_children as $child)
+			$id = get_the_ID();
+			$args = array(
+				'parent' => 0
+			);
+			$pages = get_pages($args);
+			foreach ($pages as $page)
 			{
-				if ($child->post_parent === 0)
-				{
-					echo "<a href='" . $child->guid . "'>" . $child->post_title . "</a>";
-					echo "<span>" . get_metadata('post', $child->ID, 'appmobi_page_description', true) . "</span><br>";
-				}
+				echo "<a href='" . $page->guid . "'>" . $page->post_title . "</a>";
+				echo "<span>" . get_metadata('post', $page->ID, 'appmobi_page_description', true) . "</span><br>";
 			}
 			?>
 		</div><!-- #content -->
