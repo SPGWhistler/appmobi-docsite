@@ -190,6 +190,10 @@ img {
     font-style: normal;
 }
 
+strong {
+	font-family: 'eurostilebold';
+}
+
 /* =Repeatable patterns
 -------------------------------------------------------------- */
 
