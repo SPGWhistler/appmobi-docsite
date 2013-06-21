@@ -190,10 +190,6 @@ img {
     font-style: normal;
 }
 
-strong {
-	font-family: 'eurostilebold';
-}
-
 /* =Repeatable patterns
 -------------------------------------------------------------- */
 
@@ -544,7 +540,6 @@ a:hover {
 .site {
 }
 .site-content {
-	width: 845px;
 	padding: 24px 15px 0 15px;
 	float: left;
 }
@@ -1911,6 +1906,6 @@ img#wpstats {
 
 .content-wrap {
 	background: #fff;
-	width: 1184px;
+	width: 875px;
 	margin: 20px auto 0 auto;
 }
