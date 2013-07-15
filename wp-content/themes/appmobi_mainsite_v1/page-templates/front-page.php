@@ -30,7 +30,6 @@
   not be needed at all. Your situation will determine.
 */
 #clb-shell p {
-  padding : 10px;
   clear : both;
 }
 
@@ -109,6 +108,20 @@ ul#clb p {
   padding : 0;
   margin : 10px;
 }
+
+div.pageBox{
+	background:#fff;
+	border:1px rgb(151,201,62) dashed;
+	margin:10px 0 20px 0;
+	padding:10px;
+	text-align:left;
+	cursor:pointer;
+	
+}
+div.pageBox > p{padding:0px; margin:0px; font-size:1.5em;}
+div.pageBox:hover{background:rgb(241,241,241);}
+div.pageBox>h3{margin:0 0 20px 0; }
+div.pageBox>h3>a{font-size:2em}
 </style>
 
 <?php get_header(); ?>
@@ -128,18 +141,18 @@ ul#clb p {
 		$pages = get_pages($args);
 		?>
 		<div id="clb-shell">
-			<ul id="clb">
+			
 				<?php
 				foreach ($pages as $page)
 				{
 					if ($page->post_title !== 'home')
 					{
-						echo "<li><h3><a href='" . $page->guid . "'>" . $page->post_title . "</a></h3>";
-						echo "<p>" . get_metadata('post', $page->ID, 'appmobi_page_description', true) . "</p></li>";
+						echo "<div class=\"pageBox\" onclick=\"window.location='".$page->guid."'\"><h3><a href='" . $page->guid . "'>" . $page->post_title . "</a></h3>";
+						echo "<p>" . get_metadata('post', $page->ID, 'appmobi_page_description', true) . "</p></div>";
 					}
 				}
 				?>
-			</ul>
+			
 		</div>
 	</div><!-- #content -->
 </div><!-- #primary -->
