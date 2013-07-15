@@ -67,7 +67,7 @@ ul#clb li {
   color : #fff;
 }
 #clb-shell a:hover, #clb-shell a:focus, #clb-shell a:active {
-  color : #000;
+  color : #fff;
   text-decoration : none;
 }
 #clb-shell a:focus, #clb-shell a:active {
