@@ -540,6 +540,7 @@ a:hover {
 .site {
 }
 .site-content {
+	width: 100%;
 	padding: 24px 15px 0 15px;
 	float: left;
 }
