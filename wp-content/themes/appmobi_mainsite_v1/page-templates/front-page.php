@@ -64,7 +64,7 @@ ul#clb li {
   Style the li links
 */
 #clb-shell a {
-  color : #669900;
+  color : #fff;
 }
 #clb-shell a:hover, #clb-shell a:focus, #clb-shell a:active {
   color : #000;
@@ -78,7 +78,7 @@ ul#clb li {
   Style the h3 links
 */
 #clb-shell ul#clb h3 a {
-  color : #57c1cd;
+  color : #fff;
   display : block;
   width : 194px;
   padding : 2px 3px;
@@ -110,8 +110,7 @@ ul#clb p {
 }
 
 div.pageBox{
-	background:#fff;
-	border:1px rgb(151,201,62) dashed;
+	background:#57c1cd;
 	margin:10px 0 20px 0;
 	padding:10px;
 	text-align:left;
@@ -119,7 +118,9 @@ div.pageBox{
 	
 }
 div.pageBox > p{padding:0px; margin:0px; font-size:1.5em;}
-div.pageBox:hover{background:rgb(241,241,241);}
+div.pageBox:hover{
+	background: #97c93e;
+}
 div.pageBox>h3{margin:0 0 20px 0; }
 div.pageBox>h3>a{font-size:2em}
 </style>
