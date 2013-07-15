@@ -20,7 +20,7 @@ get_header(); ?>
 	<div class="clear"></div>
 </div>
 <nav id="site-navigation" class="main-navigation" role="navigation">
-	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' , 'depth' => 2) ); ?>
 </nav><!-- #site-navigation -->
 
 <div class="content-wrap">
