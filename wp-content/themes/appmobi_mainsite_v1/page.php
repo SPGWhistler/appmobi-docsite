@@ -15,7 +15,7 @@
 get_header(); ?>
 <div class="template-front-page top template-full-page">
 	<div class="template-front-page logo">
-		<a href="http://appmobi.com/"><img src="http://tmp.appmobi.com/wp-content/uploads/2013/05/logo_cloudservices.png" width="303" height="74" /></a>
+		<a href="http://appmobi.com/"><img src="http://docs.appmobi.com/wp-content/uploads/2013/07/logo_documentation.png" width="303" height="74" /></a>
 	</div>
 	<div class="clear"></div>
 </div>
