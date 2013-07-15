@@ -1791,7 +1791,7 @@ img#wpstats {
 		padding: 0;
 		position: absolute;
 		top: 100%;
-		z-index: 1;
+		z-index: 10000;
 	}
 	.main-navigation li ul ul {
 		top: 0;
