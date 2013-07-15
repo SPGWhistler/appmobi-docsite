@@ -541,7 +541,6 @@ a:hover {
 }
 .site-content {
 	width: 100%;
-	padding: 24px 15px 0 15px;
 	float: left;
 }
 .template-front-page .site-content {
@@ -1379,7 +1378,6 @@ img.template-front-page {
 .template-front-page .site-content article {
 	border: 0;
 	margin-bottom: 0;
-	padding-bottom: 0;
 }
 .template-front-page .widget-area {
 	clear: both;
@@ -1908,5 +1906,6 @@ img#wpstats {
 .content-wrap {
 	background: #fff;
 	width: 875px;
-	margin: 20px auto 0 auto;
+	margin: 20px auto 15px auto;
+	padding: 15px 15px 0 15px;
 }
