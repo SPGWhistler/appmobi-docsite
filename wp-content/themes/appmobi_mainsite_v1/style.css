@@ -541,6 +541,7 @@ a:hover {
 }
 .site-content {
 	float: left;
+	width: 677px;
 }
 .template-front-page .site-content {
 	margin: 0;
