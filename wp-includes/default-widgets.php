@@ -28,7 +28,12 @@ class WP_Widget_Pages extends WP_Widget {
 		if ( $sortby == 'menu_order' )
 			$sortby = 'menu_order, post_title';
 
-		$out = wp_list_pages( apply_filters('widget_pages_args', array('title_li' => '', 'echo' => 0, 'sort_column' => $sortby, 'exclude' => $exclude) ) );
+		$out = wp_list_pages( apply_filters('widget_pages_args', array(
+			'title_li' => '',
+			'echo' => 0,
+			'sort_column' => $sortby,
+			'exclude' => $exclude
+		) ) );
 
 		if ( !empty( $out ) ) {
 			echo $before_widget;
